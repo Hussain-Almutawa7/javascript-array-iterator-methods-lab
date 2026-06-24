@@ -291,8 +291,8 @@ old or older.
 let isAdultPresent = null;
 
 // Complete the exercise in the space below:
-devs.some(dev =>{
-    isAdultPresent = Date.now() - dev.year >= 18 // or I can type 2026 but date is more accurate
+isAdultPresent = devs.some(dev => {
+    return 2026 - dev.year >= 18
 })
 
 // Check your work:
@@ -316,7 +316,7 @@ let isEveryone19OrOlder = null;
 
 // Complete the exercise in the space below:
 isEveryone19OrOlder = devs.every(dev => {
-    return Date.now() - dev.year >= 19;
+    return 2026 - dev.year >= 19;
 })
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
